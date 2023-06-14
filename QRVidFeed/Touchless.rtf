@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Msftedit 5.41.21.2508;}\viewkind4\uc1\pard\sa200\sl276\slmult1\b\f0\fs40 Touchless SDK Documentation\par
+\pard\li360\sa200\sl276\slmult1\fs24 Homepage:\tab\ul http://www.codeplex.com/touchless\ulnone\par
+Project Author:\tab Michael Wasserman\par
+\tab\tab\tab Michael.Wasserman@microsoft.com\par
+\pard\fi-1800\li2160\sa200\sl276\slmult1 Thanks due to:\tab Gary Caldwell, Isabel Mattos, Nicole Steinbok, Quinn Hawkins, MS Office Labs Community Projects, John Kender, and you!\par
+\pard\li360\sa200\sl276\slmult1\b0\par
+\pard\sa200\sl276\slmult1\b\fs28 0.\tab Table of contents\par
+\pard\li360\fs24 0.\tab Table of contents (oh no! infinite loop!)\par
+1.\tab What's Touchless?\par
+2. \tab What's in this release?\par
+3.\tab What's in the source repository?\par
+4.\tab How to add Touchless to your project\par
+5.\tab Reference Information\par
+6.\tab Backlog of ideas\par
+\pard\li360\sa200\sl276\slmult1\b0\par
+\pard\sa200\sl276\slmult1\b\fs28 1.\tab What's Touchless?\par
+\pard\li360\sa200\sl276\slmult1\b0\fs24 Touchless is an SDK that allows users to create and experience multi-touch applications. Touchless started as Mike Wasserman\rquote s college project at Columbia University. The main idea: to offer users a new and cheap way of experiencing multi-touch capabilities, without the need of expensive hardware or software. All the user needs is a camera, which will track colored markers defined by the user.\par
+Mike presented the project at the Microsoft Office Labs Productivity Science Fair, Office Labs fell in love with it, and Touchless was chosen as a Community Project. Our deliverables include an extensible demo application to showcase a limited set of multi-touch capabilities, but mainly we are delivering an SDK to allow users to build their own multi-touch applications.\par
+Now, Touchless is released free and open-source to the world under the Microsoft Public License (Ms-PL) on CodePlex. Our goals are to drive community involvement and use of the SDK as it continues to develop.\par
+Remember that this is just the beginning; and you're invited to join our journey. Send us your questions and feedback, use Touchless SDK in your .NET applications and XNA games, and support the community by contributing to the source code.\par
+Unleash the power of your webcam!\par
+\par
+\pard\fi-360\li360\sa200\sl276\slmult1\b\fs28 2.\tab What's in this release?\par
+\pard\li360\sa200\sl276\slmult1\b0\fs24 This release includes a short list of binary files to demonstrate Touchless:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\li720\sa200\sl276\slmult1 WebCamLib.dll - Interfaces with DirectShow to grab webcam frames\par
+{\pntext\f1\'B7\tab}TouchlessLib.dll - Contains the functionality of Touchless SDK\par
+{\pntext\f1\'B7\tab}TouchlessDemo.exe - A small demonstration of what Touchless can be used for\par
+{\pntext\f1\'B7\tab}Image.gif - Used in TouchlessDemo's image demo\par
+{\pntext\f1\'B7\tab}Touchless.chm - A documentation file of the Touchless API for developers\par
+{\pntext\f1\'B7\tab}Touchless.jpg - A class diagram of the Touchless API for developers\par
+{\pntext\f1\'B7\tab}Touchless.rtf - This file; you're reading it right now!\par
+\pard\li360\sa200\sl276\slmult1 If you just want to try out the simple demos offered with the SDK, extract the release to any location on your computer, and run "TouchlessDemo.exe".\par
+\par
+\pard\fi-360\li360\sa200\sl276\slmult1\b\fs28 3.\tab What's in the source repository?\par
+\pard\li360\sa200\sl276\slmult1\b0\fs24 The source repository is hosted at the homepage of Touchless:\par
+\ul http://www.codeplex.com/touchless \par
+\ulnone The directories you'll find there are:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-180\li900\sa200\sl276\slmult1 bin - Binary versions of the files, updated more frequently than our releases\par
+{\pntext\f1\'B7\tab}Documentation - Browse media documenting the project\par
+{\pntext\f1\'B7\tab}Samples - Apps/Games that demonstrate or use Touchless (submit yours!)\par
+{\pntext\f1\'B7\tab}TouchlessLib - Touchless functionality, written in C#, uses .NET 3.0+, VS2005+\par
+{\pntext\f1\'B7\tab}TouchlessUnitTests - Unit tests to prevent regression\par
+{\pntext\f1\'B7\tab}WebCamLib - Webcam functionality, written in C++, uses DX SDK Aug. 2007\par
+\pard\li360\sa200\sl276\slmult1 Become a contributor by adding your Touchless apps or improving the SDK code!\par
+\par
+\pard\sa200\sl276\slmult1\b\fs28 4.\tab How to add Touchless to your project\par
+\pard\li360\sa200\sl276\slmult1\b0\fs24 By adding Touchless to your project, you can give your users a truly fun, novel, and functional multi-touch experience, and all they need is a webcam!\par
+The prerequisites you'll need to develop using Touchless are:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-180\li900\sa200\sl276\slmult1 Visual Studio 2005 or 2008\par
+{\pntext\f1\'B7\tab}.NET 3.0 or higher\par
+{\pntext\f1\'B7\tab}"TouchlessLib.dll" and "WebcamLib.dll"\par
+\pard\li360\sa200\sl276\slmult1 To add Touchless to an existing visual Studio project, simply right click \ldblquote References\rdblquote  and select \ldblquote Add Reference\'85\rdblquote  go to the browse tab, and select "TouchlessLib.dll". Ensure that both "TouchlessLib.dll" and "WebcamLib.dll" are copied to the same output directory to be used with your builds.\par
+\par
+\pard\fi-360\li360\sa200\sl276\slmult1\b\fs28 5.\tab Reference Information\par
+\pard\li360\sa200\sl276\slmult1\b0\fs24 You can find extensive information on all properties and methods of each class in our XML-generated documentation file \ldblquote TouchessLib.chm\rdblquote . The Touchless class diagram reflects public classes, methods, and properties of the API; it is avaiable as "Touchless.jpg". These files are distributed with each release, and also available in the source code repository, located in the documentation folder.\b\fs28\par
+\b0\fs24\par
+\pard\sa200\sl276\slmult1\b\fs28 6.\tab Backlog of Ideas\par
+\pard\li360\sa200\b0\fs24 This is a very terse list of ideas for improving Touchless SDK.\ul\b\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\ulnone ColorLib\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\b0 Improve HSV colorspace partitioning model. We could group perceived similar colors better. Potentially replace with a group clustering algorithm. Perhaps just refine the per-dimension bin counts, or replace the hash function.\par
+{\pntext\f1\'B7\tab}Use a lookup table instead of transforming RGB to HSV. We can just terminate early if it\rquote s not in the lookup table.\par
+{\pntext\f1\'B7\tab}Reduce loop overhead of converting ARGB values into RGB values, then into HSV values, then into Binned HSV values, then finally into a hash # for color lookup during marker update. Potentially use a lookup table for a subset of colors to avoid the math altogether.\par
+{\pntext\f1\'B7\tab}Improve HSV color grouping, consider refining the per-dimension bin counts or using a different HSV color-space partitioning model that better suits human perception of similar colors.\par
+\pard\li1440\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\b Marker\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\b0 Implement a way of getting higher degree moments of inertia. Mostly, we are interested in the axis of least rotational momentum and the roundness factor.\par
+{\pntext\f1\'B7\tab}Allow the user to send a mask image with the add marker bitmap for arbitrary marker region selections.\rdblquote\par
+{\pntext\f1\'B7\tab}Extend or replace alpha smoothing with exponential decay to provide smoothed marker data and reduce the marker jumpiness.\par
+{\pntext\f1\'B7\tab}Optimize threshold, or replace threshold concept with a partial matching. Also, step threshold by numbers that actually make a difference, or just have sensitivity +/- buttons and increment functions\par
+{\pntext\f1\'B7\tab}Expose smoothing factor as a public marker property.\par
+{\pntext\f1\'B7\tab}Fix and improve the automated  marker tests\par
+{\pntext\f1\'B7\tab}Standardize some marker colors, create an \ldblquote auto-find makers\rdblquote\par
+{\pntext\f1\'B7\tab}Improve the search bounds of a previously absent marker. \par
+{\pntext\f1\'B7\tab}Improve the meta-tracking (cases where small numbers of pixels are missing from the middle of a marker, or are outliers of the concentration of pixels)\par
+{\pntext\f1\'B7\tab}Periodically/continuously adopt surrounding pixels of confirmed marker pixels\par
+{\pntext\f1\'B7\tab}Coloravg is currently just marker representative color. Implement a way of actually getting a color average from the set of colors found\par
+{\pntext\f1\'B7\tab}Improve Marker highlighting\par
+{\pntext\f1\'B7\tab}Improve upon the raster scan algorithm used for marker updating.\par
+{\pntext\f1\'B7\tab}Optimize the method for getting the marker appearance from a circular area of a bitmap; we could use hierarchical bounds intersection or something smarter than the current scan algorithm.\par
+{\pntext\f1\'B7\tab}Optimize the values used to increment/decrement color frequencies for marker appearance detection. This should be somehow based on signal/noise ratios.\par
+{\pntext\f1\'B7\tab}Improve the expected marker regions used for scanning on update. We could consider the marker\rquote s acceleration, rather than just the velocity. Perhaps try using regions that aren\rquote t axis-aligned rectangles. \par
+\pard\li1440\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\b TouchlessMgr\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li1440\b0 Add functionality to save and load marker configuration files (reduce repeat training of the same marker, possibly provide autoconfig files for standard markers... will variant lighting allow for this?)\par
+{\pntext\f1\'B7\tab}Implement additional marker data such as ColorAverage, ColorSpace, Axis and Roundness.\par
+{\pntext\f1\'B7\tab}Add flood fill algorithm so we can add a marker with a few points in the Bitmap.\par
+{\pntext\f1\'B7\tab}Refine the marker tracked colors as we find colors around the marker. \par
+{\pntext\f1\'B7\tab}The representative color doesn\rquote t always match the perceived color of the marker.\par
+{\pntext\f1\'B7\tab}Provide subsequent examples of a marker appearance\par
+{\pntext\f1\'B7\tab}Have TouchlessMgr actually expose a way to get a list of the current markers\par
+{\pntext\f1\'B7\tab}Make a better exception for camera start failure\par
+{\pntext\f1\'B7\tab}Validate the PixelFormat of incoming images.\par
+{\pntext\f1\'B7\tab}Create a utility function to retrieve ImageData in a consistent manner; we have a bit of code duplication right now.\par
+{\pntext\f1\'B7\tab}Make a public interface for demo classes to implement, then allow the user to just invoke start and stop of a demo class on the library\par
+{\pntext\f1\'B7\tab}Standardize error handling and exception generation across the project.\par
+\pard\sa200\sl276\slmult1\par
+}
+ 
